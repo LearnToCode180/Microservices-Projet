@@ -30,11 +30,13 @@ Le travail est divisé par cinq, chacun prend deux microservices et moi j'ai pri
 
 # Design Patterns ustilisés
 
++ Service per team
 + Discovery Server (Eureka Server)
 + Database per Sevice
 + Load Balancing
 + Api Gateway (Zuul Server)
-+ Fault Tolerance
++ Database per service (MongoDB, MySQL...)
++ Timeout
 + Circuit Breaker (Hystrix)
 + Distibuted Tracing (Spring Sleuth et Zipkin)
 
