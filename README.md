@@ -26,7 +26,27 @@ Il y a dix microservices :
 + Microservice des Motifs
 + Microservice des Soumissions
 
+Le travail est divisé par cinq, chacun prend deux microservices et moi j'ai pris les deux microservices des **Affectations** et de **ressources**.
 
+# Design Patterns ustilisés
 
++ Discovery Server (Eureka Server)
++ Database per Sevice
++ Load Balancing
++ Api Gateway (Zuul Server)
++ Fault Tolerance
++ Circuit Breaker (Hystrix)
++ Distibuted Tracing (Spring Sleuth et Zipkin)
 
+# Travail realisé
++ Pour le Service des **Ressources**, il y aura **une seule** communication avec le service des **Fournisseurs** (Affichage de la liste des Fournisseurs).
++ Et pour le Service **Affectations**, il y aura **deux** communications, la première avec le service des **Ressources** (Affichage de la liste des Ressources), et la deuxième avec le service des **Besoins** (Affichage de la liste des Besoins).
 
+(Pour cela, j'ai fait le upload des quatres microservices et non pas seulement les miens)
+
+Et on va pouvoir ajouter, supprimer et afficher les ressources pour le Microservice des Ressources et les affectations pour le Microservice des Affectations.
+
+# Technologies utilisées
++ Java 11
++ Spring Boot
++ MongoDB
