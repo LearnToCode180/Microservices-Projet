@@ -28,7 +28,7 @@ Il y a dix microservices :
 
 Le travail est divisé par cinq, chacun prend deux microservices et moi j'ai pris les deux microservices des **Affectations** et de **ressources**.
 
-# Design Patterns ustilisés
+# Design Patterns utilisés
 
 + Service per team
 + Discovery Server (Eureka Server)
